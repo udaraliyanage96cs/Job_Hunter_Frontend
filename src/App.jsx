@@ -16,7 +16,7 @@ const CoverLetterGenerator = () => {
         setLoading(true);
         setError('');
         try {
-            const response = await fetch('http://127.0.0.1:3000/generate', {
+            const response = await fetch('https://job-hunter-backend-be45.onrender.com/generate', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -40,7 +40,7 @@ const CoverLetterGenerator = () => {
         setLoading(true);
         setError('');
         try {
-            const response = await fetch('http://127.0.0.1:3000/send', {
+            const response = await fetch('https://job-hunter-backend-be45.onrender.com/send', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
