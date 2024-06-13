@@ -95,7 +95,7 @@ const CoverLetterGenerator = () => {
                 </div>
                 <div className="col">
                     <h2>AI Data</h2>
-                    <textarea className="form-control" rows="10" value={aiData} readOnly></textarea>
+                    <textarea className="form-control" rows="10" value={aiData} onChange={(e) => setAiData(e.target.value)}></textarea>
                 </div>
             </div>
             <form>
